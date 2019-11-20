@@ -9,8 +9,8 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-  - php artisan key:generate
   - cp .env.travis .env
+  - php artisan key:generate
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
   
